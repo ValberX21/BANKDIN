@@ -8,7 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+#pragma warning disable CS8604 // Possible null reference argument.
 var key = Encoding.ASCII.GetBytes(builder.Configuration.GetSection("Secret").ToString());
+#pragma warning restore CS8604 // Possible null reference argument.
 
 builder.Services.AddAuthentication(options =>
     {
