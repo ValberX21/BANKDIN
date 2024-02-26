@@ -6,7 +6,7 @@ namespace bankinapi.Services
     {
         public Usuario checkSeUsuariaValido()
         {
-            return _geraTk.find(x => x.id == usu).FirstOrDefaut();
+            return null;//_geraTk.find(x => x.id == usu).FirstOrDefaut();
         }
     }
 }
