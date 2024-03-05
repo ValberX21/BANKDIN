@@ -15,8 +15,10 @@ namespace bankinapi.Token
         private readonly int _accessTokenExpirationMinutes;
         private readonly int _refreshTokenExpirationMinutes;
 
-            public GenerateToken(string issuer, string audience, int accessTokenExpirationMinutes, int refreshTokenExpirationMinutes)
-            {
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        public GenerateToken(string issuer, string audience, int accessTokenExpirationMinutes, int refreshTokenExpirationMinutes)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        {
                 _issuer = issuer;
                 _audience = audience;               
                 _accessTokenExpirationMinutes = accessTokenExpirationMinutes;

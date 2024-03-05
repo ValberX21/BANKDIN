@@ -5,6 +5,6 @@ namespace bankinapi.Models.Dto
         public object? Result {get; set;} 
         public bool IsSuccess {get; set;} 
         public string Message {get; set;} = ""; 
-        public string RefreshToken {get;set;}
+        public string? RefreshToken {get;set;}
     }
 }
