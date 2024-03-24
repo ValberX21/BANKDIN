@@ -2,9 +2,11 @@ namespace bankinapi.Models.Dto
 {
     public class ResponseDto
     {
-        public object? Result {get; set;} 
-        public bool IsSuccess {get; set;} 
-        public string Message {get; set;} = ""; 
-        public string? RefreshToken {get;set;}
+        public bool IsSuccess { get; set; } = true;
+        public object Result { get; set; }
+        public string Token { get; set; }
+        public string DisplayMessage { get; set; } = "";
+        public List<string> ErrorMessage { get; set; }
+        public List<string> ErrorMessages { get; internal set; }
     }
 }

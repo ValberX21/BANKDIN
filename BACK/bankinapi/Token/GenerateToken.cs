@@ -8,7 +8,7 @@ using bankinapi.Models.Dto;
 namespace bankinapi.Token
 {
     public class GenerateToken
-           {
+    {
         private readonly string _issuer;
         private readonly string _audience;
         private readonly string _signingKey;
@@ -23,7 +23,7 @@ namespace bankinapi.Token
                 _audience = audience;               
                 _accessTokenExpirationMinutes = accessTokenExpirationMinutes;
                 _refreshTokenExpirationMinutes = refreshTokenExpirationMinutes;
-            }
+        }
 
         public ResponseDto GenerateTokens(string userId)
         {
@@ -48,7 +48,6 @@ namespace bankinapi.Token
             ResponseDto rDt = new ResponseDto();
             
             return  rDt;
-            //return (tokenHandler.WriteToken(accessToken), refreshToken);
         }
     }  
 }

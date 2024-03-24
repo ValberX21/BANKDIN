@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/bankinapi.props" />
+  <Import Project="..\build\bankinapi.props" />
 </Project>
