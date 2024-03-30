@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import FintechPNG from '../assets/FintechPNG.png';
 import { motion } from "framer-motion"
 import NexWallet from '../assets/NexWallet.mp4'
+import BackgroundLogin from './BackgroundLogin';
 function Login() {
     const [showVideo, setShowVideo] = useState(true);
     useEffect(() => {
@@ -14,9 +15,11 @@ function Login() {
     }, []);
     return (
         <>
+       
             {showVideo ? (
-                <div className=" bg-black">
-                    <div className="bg-black flex justify-center items-center" style={{ height: "100vh" }}>
+                
+                <div>
+                    <div className=" flex justify-center items-center" style={{ height: "100vh" }}>
                         {/* Mostrar o vídeo aqui */}
                         <video autoPlay muted style={{ maxWidth: "100%", maxHeight: "100%" }}>
                             <source src={NexWallet} type="video/mp4" />
@@ -25,7 +28,8 @@ function Login() {
                     </div>
                 </div>
             ) : (
-                <div className="bg-black">
+                <div className="relative z-10">
+                <div className="">
                     <motion.div
                         initial={{ y: 300, opacity: 0.4 }}
                         animate={{ y: 0, opacity: 1 }}
@@ -64,7 +68,8 @@ function Login() {
                         transition={{ duration: 0.7, delay: 1 }} // primeira div começa imediatamente
                         className="animate3"
                     >
-                        <div className=" bg-black text-white flex  flex-col items-center pt-2 sm:justify-center sm:pt-0">
+                        
+                        <div className="  text-white flex  flex-col items-center pt-2 sm:justify-center sm:pt-0">
 
                             <div className="relative mt-12 w-full max-w-lg sm:mt-10">
                                 <div className="relative -mb-px h-px w-full bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
@@ -118,7 +123,9 @@ function Login() {
                                 </div>
                             </div>
                         </div>
+                       
                     </motion.div>
+                </div>
                 </div>
             )}
         </>

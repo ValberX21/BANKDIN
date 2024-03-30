@@ -29,10 +29,10 @@ const TransferenciaHome = () => {
         return transactions.map((transaction) => (
             <div key={transaction.id} className="flex justify-between items-center px-6 py-4 ">
                 <div className="flex space-x-3 items-center">
-                    <img src={transaction.imageUrl} alt={transaction.name} className="rounded-full" />
+                    <img src={transaction.imageUrl} alt={transaction.name} className="rounded-full " />
                     <div>
-                        <p className="text-sm font-semibold">{transaction.name}</p>
-                        <p className="text-xs text-gray-500">{transaction.date}</p>
+                        <p className="text-sm font-semibold text-white-fb">{transaction.name}</p>
+                        <p className="text-xs text-gray-c7">{transaction.date}</p>
                     </div>
                 </div>
                 <div>
@@ -45,33 +45,33 @@ const TransferenciaHome = () => {
         ));
     };
     return (
-        <div className="bg-gray-100 max-w-sm mx-auto">
-            <div className="flex justify-between items-center bg-white py-4 px-6 rounded-t-lg shadow">
+        <div className="bg-CardTheme max-w-sm mx-auto">
+            <div className="flex justify-between items-center bg-CardTheme py-4 px-6 rounded-t-lg shadow">
                 <div className="flex space-x-3 items-center">
                     <button
                         aria-label="Transferência"
-                        className={`focus:outline-none ${activeTab === 'transfer' ? 'text-black' : 'text-gray-600'} p-2`}
+                        className={`focus:outline-none ${activeTab === 'transfer' ? 'text-white-fe' : 'text-gray-600'} p-2`}
                         onClick={() => setActiveTab('transfer')}
                     >
                         <div className="flex ">
-                            <LuArrowUpToLine className='mr-2' />
+                            <LuArrowUpToLine className='mr-2 text-GreenTheme' />
                             <span>Transferência</span>
                         </div>
 
                     </button>
                     <button
                         aria-label="Recebido"
-                        className={`focus:outline-none ${activeTab === 'receive' ? 'text-black' : 'text-gray-600'}`}
+                        className={`focus:outline-none ${activeTab === 'receive' ? 'text-white-fe' : 'text-gray-600'}`}
                         onClick={() => setActiveTab('receive')}
                     >
                         <div className="flex ">
-                            <LuArrowDownToLine className='mr-2' />
+                            <LuArrowDownToLine className='mr-2 text-GreenTheme' />
                             <span>Recebido</span>
                         </div>
                     </button>
                 </div>
                 <button aria-label="Options" className="text-gray-600 focus:outline-none">
-                    <FontAwesomeIcon icon={faEllipsisV} />
+                    <FontAwesomeIcon icon={faEllipsisV} className='text-GreenTheme' />
                 </button>
             </div>
             <AnimatePresence mode="wait">
@@ -81,7 +81,7 @@ const TransferenciaHome = () => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: activeTab === 'transfer' ? 100 : -100 }}
                     transition={{ duration: 0.2 }}
-                    className="bg-white divide-y divide-gray-200"
+                    className="bg-CardTheme divide-y divide-gray-800"
                 >
                     {activeTab === 'transfer'
                         ? renderTransactions(transferTransactions)

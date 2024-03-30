@@ -3,6 +3,7 @@ import FintechPNG from '../assets/FintechPNG.png';
 import { FaArrowTrendUp } from 'react-icons/fa6';
 import './App.css'; // Importe o arquivo app.css aqui
 import { Link } from 'react-router-dom';
+import BackgroundLogin from './BackgroundLogin';
 
 function Cadastro() {
     const [cpf, setCpf] = useState('');
@@ -36,7 +37,10 @@ function Cadastro() {
             .replace(/(-\d{2})\d+?$/, '$1');
     };
     return (
+        
         <div className=" bg-black  font-exo2">
+            <BackgroundLogin />
+            <div className=' relative z-10'> 
             <img src={FintechPNG} alt="Fintech" className='w-24 flex ml-36' />
             <div className=" p-5">
                 <h1 className="  text-white tracking-wide text-2xl">
@@ -80,6 +84,7 @@ function Cadastro() {
                 </div>
             </div>
             <button className=" m-64 mt-4 flex items-center   font-semibold hover:bg-black hover:text-white hover:ring hover:ring-white transition duration-300  rounded-md text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black h-10 px-4 py-2" type="submit"> <Link to="./Components/CadastroFinal">Continuar</Link></button>
+            </div>
         </div>
     );
 }
