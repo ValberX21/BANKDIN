@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TYAlVvD+wQmRDL/R20PpwXcsMulpPeSqy6i9aoCCeeY4RzvLJE+4/a0hAe60VQpyUqlo5HPO5VIKFVj7ki3VNQ==",
+  "dgSpecHash": "uqU53CzLvoYTk6ucexHrodPLphTNABHjCT0CdhjPi/3jGeLxKptIrM37EgP/I4FloLDWiGFBx9k/jBX21qkoww==",
   "success": true,
   "projectFilePath": "C:\\_developer\\BANKDIN\\BACK\\bankinapi\\bankinapi.csproj",
   "expectedPackageFiles": [
@@ -70,7 +70,7 @@
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\marti\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

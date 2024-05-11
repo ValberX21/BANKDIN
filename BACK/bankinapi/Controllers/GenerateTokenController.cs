@@ -36,7 +36,7 @@ namespace bankinapi.GenerateTokenController
                 _response.Token = theToken;
             }
             catch (Exception ex)
-            {
+            {             
                 _response.IsSuccess = false;
                 _response.ErrorMessage
                 = new List<string>() { ex.ToString() };
