@@ -56,7 +56,7 @@ namespace bankinapi.GenerateTokenController
                 {
                     Subject = new ClaimsIdentity(new Claim[]
                            {
-                new Claim(ClaimTypes.Name,usuDto.NOME.ToString(),
+                       new Claim(ClaimTypes.Name,usuDto.NOME.ToString(),
                           ClaimTypes.Hash,usuDto.SENHA.ToString()
                          )
                            }),
